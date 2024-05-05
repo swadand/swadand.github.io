@@ -1,0 +1,17 @@
+* {
+    color: #FFFFFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1%;
+}
+
+.title {
+    margin-left: 10vw;
+}
+
+.gif {
+    width: 200px;
+}
+
+body {
+    background-color: #000001;
+}
