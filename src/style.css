@@ -1,17 +1,98 @@
 * {
     color: #FFFFFF;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 1%;
+    margin: 0px;
+    overflow: hidden;
 }
 
-.title {
-    margin-left: 10vw;
+#main-container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    isolation: isolate;
+    overflow: hidden;
 }
 
-.gif {
-    width: 200px;
+nav {
+    display: flex;
+    padding: 20px;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
-body {
-    background-color: #000001;
+ul {
+    list-style: none;
+}
+
+#title>h1 {
+    font-size: 80px;
+}
+
+#title {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20vh;
+}
+
+#avatar>img {
+    border: #FFFFFF 5px solid;
+    border-radius: 50%;
+}
+
+
+.blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(180deg,
+            rgba(47, 184, 255, 0.42) 31.77%,
+            #5c9df1 100%);
+    mix-blend-mode: color-dodge;
+    -webkit-animation: move 25s infinite alternate;
+    animation: move 25s infinite alternate;
+    transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+    -webkit-filter: blur(30px);
+        width: 520px;
+        height: 520px;
+        filter: blur(30px);
+    box-shadow:
+            inset 0 0 0 5px rgba(255, 255, 255, 0.6),
+            inset 100px 100px 0 0px #986ea4,
+            inset 200px 200px 0 0px #784ba8,
+            inset 300px 300px 0 0px #2b86c5;
+}
+
+/* .blob:hover {
+    -webkit-filter: blur(30px);
+    width: 520px;
+    height: 520px;
+    filter: blur(30px);
+    
+} */
+
+@-webkit-keyframes move {
+    from {
+        transform: translate(-1500px, -5000px) rotate(-90deg);
+        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+
+    to {
+        transform: translate(100px, 0px) rotate(-10deg);
+        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translate(-150px, -50px) rotate(-90deg);
+        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+
+    to {
+        transform: translate(500px, 100px) rotate(-10deg);
+        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
 }
